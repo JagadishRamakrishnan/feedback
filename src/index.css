@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  font-family: var(--sans);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.input-field {
+  @apply w-full bg-gray-50 border border-gray-200 rounded-lg px-2 py-1.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-[#4361ee] hover:bg-[#3f37c9] text-white text-base w-fit mx-auto font-medium py-1.5 px-6 rounded-lg shadow-sm shadow-blue-500/30 transition-all duration-200 active:transform active:scale-95;
+}
+.select-field {
+  @apply w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200 cursor-pointer;
+}
